@@ -1,0 +1,26 @@
+קבצים
+Main
+1. Html page 
+2. Style page
+3. Script page
+Blog
+1. Html page 
+2. Style page
+3. Script page
+Contact
+1.Html page 
+2. Style page
+3. Script page
+Teacher
+1. Html page 
+2. Style page
+3. Script page
+Protocole Drive
+1. Html page 
+2. Style page
+3. Script page
+Form Drive
+1. Html page 
+2. Style page
+3. Script page
+Style
