@@ -3,7 +3,7 @@ $("document").ready(function () {
     $("#Gamp").fadeIn(3000);
 });
 
-function Getsearching(){
+function yehuda(){
     $('#searching').fadeIn(3000)
 
     var xml = new XMLHttpRequest();
