@@ -74,11 +74,6 @@
               "המימוש הכי גדול שלנו להצלחה כחברה הוא ע"י שיתוף משאבים"
             </h2>
       
-            <div id="Cotert2" class="text-right">
-              <button id="insert" onclick="location.href='#1'" class="btn-primary">הכנס מורה נהיגה למאגר הנתונים</button>
-              <button class="btn-primary" onclick="location.href='#2'">חפש מורה נהיגה</button>
-            </div>
-      
             <h1 class="text-right">
               ברשותכם נציג את החזון שיש לנו על עולם מורי הנהיגה
             </h1>
@@ -102,11 +97,57 @@
               מאגר מידע יותר גדול וככה נוכל לעזור ליותר הרבה אנשים ונממש את המקיסמום
               הצלחה שלנו כחברה!!!
             </h2>
+
+            <div id="Cotert2" class="text-right">
+              <button id="insert" onclick="location.href='#1'" class="btn-primary">הכנס מורה נהיגה למאגר הנתונים</button>
+              <button class="btn-primary" onclick="Getsearching()">חפש מורה נהיגה</button>
+            </div>
+
           </div>
-      
 
 
+      <!--חפש מורה נהיגה-->
 
+      <div id="searching" style="display: none;" class="row mb-9">
+        <div class="col-lg-11 mx-auto">
+          <h5 class="font-weight-light mb-4 font-italic text-white">Underlined search bars</h5>
+          <div class="bg-white p-5 rounded shadow">
+    
+            <!-- Underlined search bars -->
+            <form>
+              <div class="form-group mb-4 text-right">
+                <label for="Name">רשיון</label>
+                <select class="form-control" id="Name">
+                  <option></option>
+                  <option>אופנוע</option>
+                  <option>אוטומט</option>
+                  <option>גיר רגיל</option>
+                </select>           
+              </div>
+              <div class="form-group mb-4 text-right">
+                <label for="Loction"> אנא הכנס את שם העיר בו תשמח ללמוד </label>
+                <select class="Loction form-control">
+                  <option selected></option>
+                </select>
+                <!-- <input id="exampleFormControlInput2" type="email" placeholder="!!Enter you asnsher" class="form-control form-control-underlined border-primary"> -->
+              </div>
+              <div class="form-group mb-4 text-right">
+                <label>מה הכי חשוב לך אצל המורה נהיגה?</label>
+                <input id="exampleFormControlInput3" type="email" placeholder="!!Enter you asnsher" class="form-control form-control-underlined border-info">
+              </div>
+              <div class="form-group text-right">
+                <label>סנן לפי?</label>
+                <input id="exampleFormControlInput6" type="email" placeholder="!!Enter you asnsher" class="form-control form-control-underlined border-danger">
+              </div>
+            </form>
+            <!-- End -->
+    
+          </div>
+        </div>
+      </div>
+    
+    
+    
           
         <!--סוף העמוד-->
         <div style="margin-top: 50px" class="row">
