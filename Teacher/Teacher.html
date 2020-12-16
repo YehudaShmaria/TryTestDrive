@@ -99,8 +99,8 @@
             </h2>
 
             <div id="Cotert2" class="text-right">
-              <button id="insert" onclick="location.href='#1'" class="btn-primary">הכנס מורה נהיגה למאגר הנתונים</button>
-              <button onclick="yehuda()" class="btn-primary">חפש מורה נהיגה</button>
+              <button onclick="yehuda()" class="btn-primary">הכנס מורה נהיגה למאגר הנתונים</button>
+              <button onclick="yehuda1()" class="btn-primary">חפש מורה נהיגה</button>
             </div>
 
           </div>
@@ -131,24 +131,68 @@
                 </select>
                 <!-- <input id="exampleFormControlInput2" type="email" placeholder="!!Enter you asnsher" class="form-control form-control-underlined border-primary"> -->
               </div>
-              <div class="form-group mb-4 text-right">
-                <label>מה הכי חשוב לך אצל המורה נהיגה?</label>
-                <input id="exampleFormControlInput3" type="email" placeholder="!!Enter you asnsher" class="form-control form-control-underlined border-info">
-              </div>
               <div class="form-group text-right">
-                <label>סנן לפי?</label>
-                <input id="exampleFormControlInput6" type="email" placeholder="!!Enter you asnsher" class="form-control form-control-underlined border-danger">
+                <label>תכונות מיוחדות שחשוב לך אצל המורה:</label>
+                <input id="exampleFormControlInput6" type="text" placeholder="!!Enter you asnsher" class="form-control form-control-underlined border-danger">
+              </div>
+              <div class="col text-center">
+                <button class="btn btn-primary">בצע חיפוש</button>
               </div>
             </form>
             <!-- End -->
-    
           </div>
         </div>
       </div>
-    
-    
-    
-          
+
+      <!--הכנס מורה נהיגה-->
+
+      <div id="Insert" style="display: none;" class="row mb-9">
+        <div class="col-lg-11 mx-auto">
+          <h5 class="font-weight-light mb-4 font-italic text-white">Underlined search bars</h5>
+          <div class="bg-white p-5 rounded shadow">
+            <!-- Underlined search bars -->
+            <form>
+              <div class="form-group text-right">
+                <label for="name">הכנס את שם מורה נהיגה:</label>
+                <input id="name" type="text" placeholder="!!Enter you asnsher" class="form-control form-control-underlined border-danger">
+              </div>
+              <div class="form-group text-right">
+                <label for="PhoneNumber">הכנס את מספר הפלאפון של המורה:</label>
+                <input id="PhoneNumber" type="tel" placeholder="!!Enter you asnsher" class="form-control form-control-underlined border-danger">
+              </div>
+              <div class="form-group mb-4 text-right">
+                <label for="Name">רשיון</label>
+                <select class="form-control" id="Name">
+                  <option></option>
+                  <option>אופנוע</option>
+                  <option>אוטומט</option>
+                  <option>גיר רגיל</option>
+                </select>           
+              </div>
+              <div class="form-group mb-4 text-right">
+                <label for="Loction">שם העיר בה המורה מלמד:</label>
+                <select class="Loction form-control">
+                  <option selected></option>
+                </select>
+                <!-- <input id="exampleFormControlInput2" type="email" placeholder="!!Enter you asnsher" class="form-control form-control-underlined border-primary"> -->
+              </div>
+              <div class="form-group text-right">
+                <label>תכונות בולטות שיש למורה:</label>
+                <input id="exampleFormControlInput6" type="text" placeholder="!!Enter you asnsher" class="form-control form-control-underlined border-danger">
+              </div>
+              <div class="form-group text-right">
+                <label for="Points">ניקוד למורה מ 1-10 לא לזרוק סתם!!!</label>
+                <input id="Points" type="number" placeholder="!!Enter you asnsher" class="form-control form-control-underlined border-danger">
+              </div>
+              <div class="col text-center">
+                <button class="btn btn-primary">שלח נתונים</button>
+              </div>
+            </form>
+            <!-- End -->
+          </div>
+        </div>
+      </div>
+      
         <!--סוף העמוד-->
         <div style="margin-top: 50px" class="row">
             <div class="col-12">
@@ -190,7 +234,6 @@
               </ul>
             </div>
           </div>
-          
     </div>
 </body>
 </html>

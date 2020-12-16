@@ -3,9 +3,9 @@ $("document").ready(function () {
     $("#Gamp").fadeIn(3000);
 });
 
-function yehuda(){
+function yehuda1(){
+    $('#Insert').css('display',('none'))
     $('#searching').fadeIn(3000)
-
     var xml = new XMLHttpRequest();
     xml.open("GET", Url, true);
     xml.onreadystatechange = function () {
@@ -20,8 +20,25 @@ function yehuda(){
                  .text(x[i].textContent));
      }
     };
-   
     xml.send();
 }
 
-
+function yehuda(){
+    $('#searching').css('display',('none'))
+    $('#Insert').fadeIn(3000)
+    var xml = new XMLHttpRequest();
+    xml.open("GET", Url, true);
+    xml.onreadystatechange = function () {
+    var alladta = xml.responseText;
+    var parser = new DOMParser();
+    var xmldoc = parser.parseFromString(alladta,"text/xml")
+    var x =  xmldoc.getElementsByTagName("שם_ישוב");
+    for(i=0;i<x.length;i++)
+    {
+      $('.Loction').append($("<option></option>")
+                 .attr("value", i.key)
+                 .text(x[i].textContent));
+     }
+    };
+    xml.send();
+}
