@@ -1,13 +1,13 @@
-var Url = "https://data.gov.il/dataset/3fc54b81-25b3-4ac7-87db-248c3e1602de/resource/72bd51be-512b-4430-b2d2-f3295c90e569/download/72bd51be-512b-4430-b2d2-f3295c90e569.xml";
+var UrlForCity = "https://data.gov.il/dataset/3fc54b81-25b3-4ac7-87db-248c3e1602de/resource/72bd51be-512b-4430-b2d2-f3295c90e569/download/72bd51be-512b-4430-b2d2-f3295c90e569.xml";
 $("document").ready(function () {
     $("#Gamp").fadeIn(3000);
 });
 
-function yehuda1(){
+function GetTeacher(){
     $('#Insert').css('display',('none'))
     $('#searching').fadeIn(3000)
     var xml = new XMLHttpRequest();
-    xml.open("GET", Url, true);
+    xml.open("GET", UrlForCity, true);
     xml.onreadystatechange = function () {
     var alladta = xml.responseText;
     var parser = new DOMParser();
@@ -23,11 +23,11 @@ function yehuda1(){
     xml.send();
 }
 
-function yehuda(){
+function InsertTeacher(){
     $('#searching').css('display',('none'))
     $('#Insert').fadeIn(3000)
     var xml = new XMLHttpRequest();
-    xml.open("GET", Url, true);
+    xml.open("GET", UrlForCity, true);
     xml.onreadystatechange = function () {
     var alladta = xml.responseText;
     var parser = new DOMParser();
@@ -42,3 +42,5 @@ function yehuda(){
     };
     xml.send();
 }
+
+
