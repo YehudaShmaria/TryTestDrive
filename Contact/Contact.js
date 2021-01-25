@@ -4,7 +4,6 @@ function sendEmail() {
 		var Name = document.getElementById('Name').value;
 		var Mail = document.getElementById('Gmail').value;
 		var Body = document.getElementById('body').value;
-		alert(Name + Mail + Body)
 		const obj = {
 			Name:Name,
 			Mail:Mail,

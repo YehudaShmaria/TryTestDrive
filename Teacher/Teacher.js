@@ -54,6 +54,7 @@ function GetAllObj(){
            var AllTeachers = JSON.parse(this.responseText)
         //    console.log(AllTeachers);
             SortTheTeachers(AllTeachers)
+            console.log(AllTeachers)
         }
     }
     xmlhttp.open("GET", url, true);
