@@ -1,16 +1,21 @@
-var Name = document.getElementById('Name');
-var body = document.getElementById('body')
+
 function sendEmail() { 
-	Email.send({ 
-	  Host: "smtp.gmail.com", 
-	  Username: "yehudas1999@gmail.com", 
-	  Password: "207193780", 
-	  To: 'yehudas1999@gmail.com', 
-	  From: "yehudas1999@gmail.com", 
-	  Subject: `${Name} is Send A mail`, 
-	  Body: `${body}`, 
-	}) 
-	  .then(function (message) { 
-	  alert("mail sent successfully") 
-	  }); 
-	} 
+	{
+		var Name = document.getElementById('Name').value;
+		var Mail = document.getElementById('Gmail').value;
+		var Body = document.getElementById('body').value;
+		alert(Name + Mail + Body)
+		const obj = {
+			Name:Name,
+			Mail:Mail,
+			Body:Body
+   
+		}
+		const json = JSON.stringify(obj);
+		const xml = new XMLHttpRequest();
+		xml.open('POST','https://serversidetestdrive.herokuapp.com/sendMail')
+		xml.setRequestHeader("Content-type","application/json")
+		xml.send(json);
+		alert('התגובה נשלחה בהצליה!!!')
+	   } 
+} 
