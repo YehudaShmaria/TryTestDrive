@@ -46,7 +46,7 @@ function InsertTeacher(){
 
 function GetAllObj(){
     var Location = document.getElementById('Location').value;
-    var Name = document.getElementById('Name').value;
+    var Type = document.getElementById('Type').value;
     var xmlhttp = new XMLHttpRequest();
     var url = "https://serversidetestdrive.herokuapp.com";
     xmlhttp.onreadystatechange = function () {
@@ -62,18 +62,18 @@ function GetAllObj(){
     function SortTheTeachers(Teachers)
     {
         var result;
-        if(Name == '') 
-        {
-            result = Teachers.filter(t => t.Location == Location);
-        }
-        else{
-            result = Teachers.filter(t => t.Location == Location && t.Name == Name);
-            console.log(result)
-            if(result.length == 0)
-            {
-                result = Teachers.filter(t => t.Location == Location);
-            }
-        }
+        // if(Name == '') 
+        // {
+            result = Teachers.filter(t => t.Type == Type);
+        //}
+        // else{
+        //     result = Teachers.filter(t => t.Location == Location && t.Name == Name);
+        //     console.log(result)
+        //     if(result.length == 0)
+        //     {
+        //         result = Teachers.filter(t => t.Location == Location);
+        //     }
+        // }
         console.log(result);
         CreateTable(result);
     }
